@@ -1,0 +1,7 @@
+<h1><%= @card_set.category %></h1>
+<p>
+  <% @card_set.cards.each do |card| %>
+    <%= "Card Number #{card.id}" %>
+    <%= link_to 'Display Card', card_set_card_path(@card_set, card) %>
+  <% end %>
+</p>

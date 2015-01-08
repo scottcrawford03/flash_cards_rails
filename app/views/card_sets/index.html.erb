@@ -1,0 +1,7 @@
+<h1>Card Sets</h1>
+<p>
+  <% @card_sets.each do |set| %>
+    <%= set.category %>
+    <%= link_to 'Cards', card_set_path(set) %>
+  <% end %>
+</p>
